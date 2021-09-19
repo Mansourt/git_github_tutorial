@@ -58,8 +58,6 @@ Follow bellow steps:
 		```
 
 
-<h style="color: red"> Some red text </h>
-
 
 ## Contact
 
