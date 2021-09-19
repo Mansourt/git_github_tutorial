@@ -63,28 +63,36 @@ Follow bellow steps:
 
 ## Some additional Commands:
 
-```
 
-# Git global setup
-git config --global user.name ["YourUserName"]
-git config --global user.email ["YourEmailAddress"]
+### Update local repository based on remote repository
+    
+	```
+	git pull
+	```
+	
+### Git global setup
 
+	```
+	git config --global user.name ["YourUserName"]
+	git config --global user.email ["YourEmailAddress"]
+	```
 
-# Create a new repository cloining from remote:
-git clone [YourRepoURL]
-touch README.md                     # Creating README file
-git add README.md
-git commit -m "add README"
-git push -u origin main
+### Create a file on PC 
+	```
+	touch README.md                     
+	touch .gitignore
+	```
+	In Windows, to create ".gitignore" file, besides the above command, you can create a txt file and rename it to **".gitignore."** (Windows explorer changes it to ".gitignore")
 
-# Push an existing local project
-cd [existing_project]
-git init
-git add .
-git commit -m "Initial commit"
-git remote add origin git@github.com:[UserName]/RepoAddress
-git push -u origin main
-```
+### Push an existing local project
+	```
+	cd [existing_project]
+	git init
+	git add .
+	git commit -m "Initial commit"
+	git remote add origin git@github.com:[UserName]/RepoAddress
+	git push -u origin main
+	```
 
 ## How to create .gitignore file
 
@@ -92,9 +100,7 @@ git push -u origin main
 	``` 
 	touch .gitignore
 	```
-2. In windows:
-	create a new text file and name to ".gitignore." (Windows explorer will change it to ".gitignore" file)
-
+2. 
 
 ## Contact
 
