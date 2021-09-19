@@ -65,11 +65,9 @@ Follow bellow steps:
 
 
 ### Update local repository based on remote repository
-    
-	```
-	git pull
-	```
-	
+```    
+git pull
+```
 ### Git global setup
 
 	```
@@ -93,14 +91,6 @@ Follow bellow steps:
 	git remote add origin git@github.com:[UserName]/RepoAddress
 	git push -u origin main
 	```
-
-## How to create .gitignore file
-
-1. using git command:
-	``` 
-	touch .gitignore
-	```
-2. 
 
 ## Contact
 
