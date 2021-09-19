@@ -58,6 +58,9 @@ Follow bellow steps:
 		```
 
 
+
+
+
 ## Some additional Commands:
 ```
 #Command line instructions
@@ -83,11 +86,17 @@ git add .
 git commit -m "Initial commit"
 git remote add origin git@github.com:[UserName]/RepoAddress
 git push -u origin main
-
-# How to create .gitignore file
-# create a new text file and name to ".gitignore." (Windows explorer will change it to ".gitignore" file)
-
 ```
+
+## How to create .gitignore file
+
+	1. using git command:
+		``` 
+		touch .gitignore
+		```
+	2. In windows
+		create a new text file and name to ".gitignore." (Windows explorer will change it to ".gitignore" file)
+
 
 ## Contact
 
