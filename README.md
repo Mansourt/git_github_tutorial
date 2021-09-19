@@ -69,28 +69,28 @@ Follow bellow steps:
 git pull
 ```
 ### Git global setup
-
-	```
-	git config --global user.name ["YourUserName"]
-	git config --global user.email ["YourEmailAddress"]
-	```
+```
+git config --global user.name ["YourUserName"]
+git config --global user.email ["YourEmailAddress"]
+```
 
 ### Create a file on PC 
-	```
-	touch README.md                     
-	touch .gitignore
-	```
-	In Windows, to create ".gitignore" file, besides the above command, you can create a txt file and rename it to **".gitignore."** (Windows explorer changes it to ".gitignore")
+```
+touch README.md                     
+touch .gitignore
+```
+In Windows, to create ".gitignore" file, besides the above command, you can create a txt file and rename it to **".gitignore."** (Windows explorer changes it to ".gitignore")
 
 ### Push an existing local project
-	```
-	cd [existing_project]
-	git init
-	git add .
-	git commit -m "Initial commit"
-	git remote add origin git@github.com:[UserName]/RepoAddress
-	git push -u origin main
-	```
+```
+cd [existing_project]
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin git@github.com:[UserName]/RepoAddress
+git push -u origin main
+```
+
 
 ## Contact
 
