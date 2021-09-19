@@ -92,7 +92,7 @@ git push -u origin main
 	``` 
 	touch .gitignore
 	```
-2. In windows
+2. In windows:
 	create a new text file and name to ".gitignore." (Windows explorer will change it to ".gitignore" file)
 
 
