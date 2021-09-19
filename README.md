@@ -41,13 +41,13 @@ Follow bellow steps:
 		```
 		git add .
 		```
-    * **commit** (**Update**) Selected Files:
+    * **Commit** (**Update**) Selected Files:
 		```
 		git commit -m "Your Explanation for this update" 
 		```
 3. **Push** (**Upload**) your updated project to your remote server (like github)
 
-	* Setup **SSH Key** for your PC accoridng to this [Doc](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+	* Setup **SSH Key** for your PC according to this [Doc](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 	* Update **remote url**: (default name for remote: *origin*)
 		```
 		git remote set-url origin git@github.com:[YourUserName]/my_first_project
@@ -58,6 +58,36 @@ Follow bellow steps:
 		```
 
 
+## Some additional Commands:
+```
+#Command line instructions
+#You can also upload existing files from your computer using the instructions below.
+
+
+# Git global setup
+git config --global user.name ["YourUserName"]
+git config --global user.email ["YourEmailAddress"]
+
+
+# Create a new repository cloining from remote:
+git clone [YourRepoURL]
+touch README.md                     # Creating README file
+git add README.md
+git commit -m "add README"
+git push -u origin main
+
+# Push an existing local project
+cd [existing_project]
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin git@github.com:[UserName]/RepoAddress
+git push -u origin main
+
+# How to create .gitignore file
+# create a new text file and name to ".gitignore." (Windows explorer will change it to ".gitignore" file)
+
+```
 
 ## Contact
 
