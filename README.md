@@ -62,10 +62,8 @@ Follow bellow steps:
 
 
 ## Some additional Commands:
-```
-#Command line instructions
-#You can also upload existing files from your computer using the instructions below.
 
+```
 
 # Git global setup
 git config --global user.name ["YourUserName"]
@@ -90,12 +88,12 @@ git push -u origin main
 
 ## How to create .gitignore file
 
-	1. using git command:
-		``` 
-		touch .gitignore
-		```
-	2. In windows
-		create a new text file and name to ".gitignore." (Windows explorer will change it to ".gitignore" file)
+1. using git command:
+	``` 
+	touch .gitignore
+	```
+2. In windows
+	create a new text file and name to ".gitignore." (Windows explorer will change it to ".gitignore" file)
 
 
 ## Contact
