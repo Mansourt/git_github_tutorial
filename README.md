@@ -1,6 +1,6 @@
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
-# How to maintain your Codes using **git** on **github** website
+# How to maintain your Codes using **git** on **GitHub** website
 
 In this doc, you will find minimum most essential **steps** and **git commands** to maintain your projects locally (on PC) and upload them to github
 
@@ -8,12 +8,12 @@ In this doc, you will find minimum most essential **steps** and **git commands**
 
 1. Create an acount on github and sign in, 
 
-2. go to **Your profile**/**Repositories** and create a new repository (by clicking on **New** button)
+2. Go to **Your profile**/**Repositories** and create a new repository (by clicking on **New** button)
 	Generally, your repository name is something like this:
 	
-	```my_first_project```
+	`my_first_project`
 
-3. After defining your repository name, hit "**Create repository**" button
+3. After defining your repository name, hit **Create repository** button
 
 ## Step 2: download and install [git](https://git-scm.com/downloads) software on your PC
 
@@ -24,72 +24,92 @@ To **clone** (download) your project to a PC, **Update** your project **locally*
 
 Follow bellow steps:
 
-1. **Clone** the project to PC: (**download** a copy of your repository)
+1. Setup **SSH Key** for your PC according to this [Doc](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account):
+
 	
-	* Go to your desired directory on your PC
-	* Start **Git Bash** (right click and select **Git Bach Here**)
+	- Generate a new SSH key
+	
+			
+			ssh-keygen -t ed25519 -C "YourEmail@example.com"
+			
+	- Add SSH key to the ssh-agent
+	
+			eval "$(ssh-agent -s)"
+			ssh-add ~/.ssh/id_ed25519
+	- Add the new SSH key to your GitHub account
+	
+		Copy SSH to clipboard:
+
+			clip < ~/.ssh/id_ed25519.pub
+
+		Go to your account **Setting / SSH and GPG keys** 
+		Click on **New SSH key** button, paste your *Key*, and hit **Add SSH key** button
+
+
+2. **Clone** the project to PC: (**download** a copy of your repository)
+	
+	* Go to a desired directory on your PC
+	* Start **Git Bash** (right click and select **Git Bash Here**)
 	* Git command to clone your project:
 	
-		```git 
-		git clone https://github.com/[YourUserName]/my_first_project
-		```
+		 
+			git clone git@github.com:[YourUserName]/my_first_project
 		
-2. Modify and Update your projects locally on your PC:
+		
+3. Modify and Update your projects locally on your PC:
 
     * After updating your files locally, **stage** (**select**) all modified files to be updated:
 	Git Command:
-		```
-		git add .
-		```
+		
+			git add .
+	
     * **Commit** (**Update**) Selected Files:
-		```
-		git commit -m "Your Explanation for this update" 
-		```
-3. **Push** (**Upload**) your updated project to your remote server (like github)
+		
+			git commit -m "Your Explanation for this update" 
+		
+4. **Push** (**Upload**) your updated project to your remote server (like GitHub)
 
-	* Setup **SSH Key** for your PC according to this [Doc](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
-	* Update **remote url**: (default name for remote: *origin*)
-		```
-		git remote set-url origin git@github.com:[YourUserName]/my_first_project
-		```
+	* Update **remote url**: (in case, it is needed)
+
+			git remote set-url origin git@github.com:[YourUserName]/my_first_project
+		
 	* **Push** (upload) your project to remote server:
-		```
-		git push -u origin main
-		```
+		
+			git push -u origin main
+		
 
 
-
-
+ 
+ 
 
 ## Some additional Commands:
 
+### Check to see **Status** of your modified repository
+	git status 
+### Update local repository based on remote repository   
+	git pull
+### Check to compare local and remote repository
+	git remote update 
+	git status -uno
 
-### Update local repository based on remote repository
-```    
-git pull
-```
 ### Git global setup
-```
-git config --global user.name ["YourUserName"]
-git config --global user.email ["YourEmailAddress"]
-```
-
+	git config --global user.name ["YourUserName"]
+	git config --global user.email ["YourEmailAddress"]
 ### Create a file on PC 
-```
-touch README.md                     
-touch .gitignore
-```
+	touch README.md                     
+	touch .gitignore
+
 In Windows, to create ".gitignore" file, besides the above command, you can create a txt file and rename it to **".gitignore."** (Windows explorer changes it to ".gitignore")
 
 ### Push an existing local project
-```
-cd [existing_project]
-git init
-git add .
-git commit -m "Initial commit"
-git remote add origin git@github.com:[UserName]/RepoAddress
-git push -u origin main
-```
+
+	cd [existing_project]
+	git init
+	git add .
+	git commit -m "Initial commit"
+	git remote add origin git@github.com:[UserName]/RepoAddress
+	git push -u origin main
+
 
 
 ## Contact
