@@ -84,10 +84,13 @@ Follow bellow steps:
 
 ## Some additional Commands:
 
-### Check to see **Status** of your modified repository
+### Check to see **Status** of your modified "Local" repository
 	git status 
 ### Update local repository based on remote repository   
 	git pull
+### Update local repository based on remote repository  and "Overwrite" current local Repo 
+	git fetch --all
+	git reset --hard origin/master
 ### Check to compare local and remote repository
 	git remote update 
 	git status -uno
